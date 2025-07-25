@@ -21,7 +21,5 @@ Starting situation
 - Which rights are necessary for a user
 - Which config and add ones are necessary in ms vscode
 
-<!-- avoid markdownlint error MD053 - Link and image reference definitions should be needed -->
-- Link of this file [![alt text][1]](./README.md)
 <!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
 [1]: img/link_symbol.svg

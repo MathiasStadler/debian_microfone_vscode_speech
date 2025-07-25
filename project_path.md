@@ -62,18 +62,28 @@ echo $BASH_VERSION
 >```
 <!-- keep the format -->
 >[!TIP]
->How to redirect a output of a command to two files [![alt text][1]](https://stackoverflow.com/questions/625571/how-to-redirect-a-output-of-a-command-to-two-files)  
->```date | tee file1 >> file2```
+>How to redirect a output of a command to two files [![alt text][1]](https://linuxize.com/post/linux-tee-command/)  
+>```# command | tee file1.out file2.out file3.out```
+<!-- keep the format -->
+>- Append to File
+>tee -a
 <!-- keep the format -->
 >[!TIP]
 >Avoid markdownlint error MD053 - Link and image reference definitions should be needed
 <!-- keep the format -->
 >```bash
->> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed-->" tee ./README.md >> ./project_path.md
+>> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed-->" tee -a ./README.md./project_path.md
 >> printf "- Link of this file [![alt text][1]](./README.md)" tee ./README.md >> ./project_path.md
->># online
->> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> \n- Link of this file [![alt text][1]](./README.md)" tee ./README.md >> ./project_path.md
+>>```
+<!-- keep the format -->
+>>- In one command line
+<!-- keep the format -->
+>>```bash
+>> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> \n- Link of this file [![alt text][1]](./README.md)" | tee -a ./README.md ./project_path.md
 >```
+>
 <!-- keep the format -->
 <!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
 [1]: ./img/link_symbol.svg
+<!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed--><!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed-->
+- Link of this file [![alt text][1]](./README.md)<!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> 
