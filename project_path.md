@@ -60,5 +60,20 @@ echo $BASH_VERSION
 >#README.md
 > printf "<\041\055\055 Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->\n [1]: ./img/link_symbol.svg\n"  >> ./README.md
 >```
-<!-- keep the format --><!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
+<!-- keep the format -->
+>[!TIP]
+>How to redirect a output of a command to two files [![alt text][1]](https://stackoverflow.com/questions/625571/how-to-redirect-a-output-of-a-command-to-two-files)  
+>```date | tee file1 >> file2```
+<!-- keep the format -->
+>[!TIP]
+>Avoid markdownlint error MD053 - Link and image reference definitions should be needed
+<!-- keep the format -->
+>```bash
+>> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed-->" tee ./README.md >> ./project_path.md
+>> printf "- Link of this file [![alt text][1]](./README.md)" tee ./README.md >> ./project_path.md
+>># online
+>> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> \n- Link of this file [![alt text][1]](./README.md)" tee ./README.md >> ./project_path.md
+>```
+<!-- keep the format -->
+<!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
 [1]: ./img/link_symbol.svg
