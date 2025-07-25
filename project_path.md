@@ -79,11 +79,19 @@ echo $BASH_VERSION
 >>- In one command line
 <!-- keep the format -->
 >>```bash
->> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> \n- Link of this file [![alt text][1]](./README.md)" | tee -a ./README.md ./project_path.md
->```
+>> printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> \n- Link of this file [![alt text][1]](./README.md)" |
+>>tee -a ./README.md ./project_path.md
+>>```
+<!-- keep the format -->
+> - all complete
+<!-- keep the format -->
+```bash
+printf "<\041\055\055 Avoid markdownlint error MD053 - Link and image reference definitions should be needed -->\n- Link of this file [![alt text][1]](./README.md)\n" |
+tee -a ./README.md ./project_path.md && \
+printf "<\041\055\055 Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->\n[1]: ./img/link_symbol.svg\n"| tee -a ./README.md ./project_path.md
+```
+<!-- keep the format -->
+
+<!-- keep the format -->
 >
 <!-- keep the format -->
-<!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
-[1]: ./img/link_symbol.svg
-<!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed--><!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed-->
-- Link of this file [![alt text][1]](./README.md)<!-- Avoid markdownlint error MD053 - Link and image reference definitions should be needed--> 

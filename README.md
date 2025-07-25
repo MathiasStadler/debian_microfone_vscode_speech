@@ -20,6 +20,3 @@ Starting situation
 - How test the microphone on command line
 - Which rights are necessary for a user
 - Which config and add ones are necessary in ms vscode
-
-<!-- Link sign - Don't Found a better way :-( - You know a better method? - send me a email -->
-[1]: img/link_symbol.svg
