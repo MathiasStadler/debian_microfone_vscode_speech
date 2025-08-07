@@ -1,6 +1,13 @@
 # debian_microphone_vscode_speech
 <!-- keep the format -->
 - Debian Microphone for VSCode Speech
+
+- [debian_microphone_vscode_speech](#debian_microphone_vscode_speech)
+  - [Challenge](#challenge)
+  - [Motivation](#motivation)
+  - [Target](#target)
+  - [Details question caver in this repo](#details-question-caver-in-this-repo)
+
 <!-- keep the format -->
 ## Challenge
 
@@ -12,7 +19,7 @@ Starting situation
 
 ## Target
 
-- This repo show how setup, handling  microphone on debian in the tool ms vscode
+- This repo show how setup, handling  microphone on debian in the program ms vscode
 
 ## Details question caver in this repo
 
